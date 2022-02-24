@@ -31,6 +31,7 @@ h1 {
 p {
   font-size: 12px;
   font-weight: 500;
+  padding-bottom: 4vh;
 }
 
 @media screen and (min-width: 500px) {
@@ -56,7 +57,7 @@ div {
   padding: 1em;
   background-color: antiquewhite;
   width: 90%;
-  height: 80vh;
+  height: 120vh;
   margin: 1em;
 }
 
@@ -86,6 +87,59 @@ div .intro {
 @media screen and (min-width: 1000px) {
   div .intro {
     padding-left: 7vw;
+  }
+}
+
+div hr {
+  border-bottom: 2px solid #b4b1b1;
+}
+
+div form {
+  padding-top: 4vh;
+}
+
+div form span {
+  display: block;
+}
+
+div form span input {
+  width: 90%;
+  height: 6vh;
+  border-radius: 6px;
+}
+
+div form span .last {
+  font-size: 13px;
+}
+
+div form span .submit {
+  width: 27vw;
+  background-color: #2279b3;
+  color: #FFFF;
+}
+
+div form span .commit {
+  font-weight: 600;
+}
+
+@media screen and (min-width: 1000px) {
+  div form span input {
+    width: 34%;
+  }
+  div form nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-right: 14vw;
+  }
+  div form nav input {
+    width: 24vw;
+  }
+  div form nav .in {
+    margin-top: 3.6vh;
   }
 }
 /*# sourceMappingURL=form.css.map */

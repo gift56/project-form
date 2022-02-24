@@ -3,7 +3,7 @@ div {
     padding: 1em;
     background-color: antiquewhite;
     width: 90%;
-    height: 80vh;
+    height: 120vh;
     margin: 1em;
     header {
         display: flex;
@@ -22,4 +22,53 @@ div {
             padding-left: 7vw;
         }
     }
+
+    hr{
+        border-bottom: 2px solid rgb(180, 177, 177);
+        
+    }
+
+    form{
+        padding-top: 4vh;
+        span{
+            display: block;
+            input{
+                width: 90%;
+                height: 6vh;
+                border-radius: 6px;
+            }
+            .last{
+                font-size: 13px;
+            }
+            .submit{
+                width: 27vw;
+                background-color: #2279b3;
+                color: #FFFF;
+            }
+            .commit{
+                font-weight: 600;
+            }
+        }
+        @media screen and (min-width:1000px) {
+            span{
+                input{
+                    width: 34%;
+
+                }
+            }
+            nav{
+                display: flex;
+                justify-content: space-evenly;
+                margin-right: 14vw;
+
+                input{
+                    width: 24vw;
+                }
+                .in{
+                    margin-top: 3.6vh;
+                }
+            }
+        }
+    }
+
 }
