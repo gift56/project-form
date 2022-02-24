@@ -1,0 +1,25 @@
+@import "reset";
+div {
+    padding: 1em;
+    background-color: antiquewhite;
+    width: 90%;
+    height: 80vh;
+    margin: 1em;
+    header {
+        display: flex;
+        text-align: center;
+        @media screen and (min-width:800px) {
+            justify-content: center;
+            .bear{
+                width: 300px;
+            }
+        }
+    }
+    .intro{
+        display: block;
+        margin-top: 3vh;
+        @media screen and (min-width:1000px) {
+            padding-left: 7vw;
+        }
+    }
+}
