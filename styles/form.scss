@@ -2,7 +2,7 @@
 @import "mixin";
 @import "varible";
 div {
-    @include WH (100%,816px);
+    @include WH (100%,900px);
     padding: $padding;
     background-color: $bgcolor;
     header {
