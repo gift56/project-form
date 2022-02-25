@@ -1,74 +1,115 @@
 @import "reset";
+@import "mixin";
+@import "varible";
 div {
-    padding: 1em;
-    background-color: antiquewhite;
-    width: 90%;
-    height: 120vh;
-    margin: 1em;
+    @include WH (100%,816px);
+    padding: $padding;
+    background-color: $bgcolor;
     header {
         display: flex;
         text-align: center;
-        @media screen and (min-width:800px) {
+        @include media($laptop) {
             justify-content: center;
-            .bear{
+            .bear {
                 width: 300px;
             }
         }
     }
-    .intro{
+    .intro {
         display: block;
-        margin-top: 3vh;
-        @media screen and (min-width:1000px) {
-            padding-left: 7vw;
-        }
+        margin-top: $topmargin;
+      @include media (1000px) {
+        padding-left: 7vw;
+      }
     }
 
-    hr{
-        border-bottom: 2px solid rgb(180, 177, 177);
-        
+    hr {
+        border-bottom: 2px solid $bordercolor;
     }
 
-    form{
-        padding-top: 4vh;
-        span{
+    form {
+        padding-top: 1 + $topmargin;
+        span {
             display: block;
-            input{
-                width: 90%;
-                height: 6vh;
-                border-radius: 6px;
+            textarea {
+                width: 89vw;
+                &:focus{
+                    outline: none;
+                    border: 1px solid $secondbgcolor;
+                }
             }
-            .last{
+            input {
+                @include WH(89vw, 6vh);
+                border-radius: 6px;
+
+                &:focus{
+                    outline: none;
+                    border: 1px solid $secondbgcolor;
+                }
+            }
+            .last {
                 font-size: 13px;
             }
-            .submit{
-                width: 27vw;
-                background-color: #2279b3;
-                color: #FFFF;
-            }
-            .commit{
+
+            .commit {
                 font-weight: 600;
             }
         }
-        @media screen and (min-width:1000px) {
-            span{
-                input{
+        nav {
+            padding-bottom: 1*$topmargin;
+        }
+        .submitbtn {
+            input {
+                @include WH (89vw,6vh);
+                border: 2px solid $btnbg;
+                background-color: $btnbg;
+                color: $textcolor;
+            }
+        }
+        @include media(1000px) {
+            span {
+                input {
                     width: 34%;
-
                 }
             }
-            nav{
-                display: flex;
-                justify-content: space-evenly;
-                margin-right: 14vw;
+            nav {
+                @include flex;
+                margin-left: 7vw;
+                gap: 2vw;
 
-                input{
+                input {
                     width: 24vw;
                 }
-                .in{
-                    margin-top: 3.6vh;
+                .in {
+                    margin-top: 18px;
                 }
+            }
+            .email {
+                width: 100%;
+                margin-left: 7vw;
+                padding-bottom: 2+$topmargin;
+                input {
+                    width: 53vw;
+                }
+            }
+            .comment {
+                width: 100%;
+                margin-left: 7vw;
+                padding-bottom: 2+$topmargin;
+
+                textarea {
+                    width: 53vw;
+                }
+            }
+            .submitbtn {
+                @include WH (12vw,9vh);
+                margin-bottom:  6+$topmargin;
             }
         }
     }
-
+    @include media (1000px){
+        width: 80%;
+        margin: 2*$topmargin auto;
+        border: 3px inset $secondbgcolor;
+    }
 }

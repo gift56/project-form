@@ -1,0 +1,13 @@
+@mixin media($width: $laptop) {
+    @media screen and (min-width: $width) {
+        @content;
+    }
+}
+@mixin flex($justice:flex-start) {
+    display: flex;
+    justify-content: $justice;
+}
+@mixin WH ($wid:12vw,$high:6vh) {
+    width: $wid;
+    height: $high;
+}
