@@ -2,7 +2,7 @@
 @import "mixin";
 @import "varible";
 div {
-    @include WH (100%,900px);
+    @include WH(100%, 900px);
     padding: $padding;
     background-color: $bgcolor;
     header {
@@ -18,9 +18,9 @@ div {
     .intro {
         display: block;
         margin-top: $topmargin;
-      @include media (1000px) {
-        padding-left: 7vw;
-      }
+        @include media(1000px) {
+            padding-left: 7vw;
+        }
     }
 
     hr {
@@ -29,11 +29,12 @@ div {
 
     form {
         padding-top: 1 + $topmargin;
+
         span {
             display: block;
             textarea {
                 width: 89vw;
-                &:focus{
+                &:focus {
                     outline: none;
                     border: 1px solid $secondbgcolor;
                 }
@@ -42,7 +43,7 @@ div {
                 @include WH(89vw, 6vh);
                 border-radius: 6px;
 
-                &:focus{
+                &:focus {
                     outline: none;
                     border: 1px solid $secondbgcolor;
                 }
@@ -56,11 +57,12 @@ div {
             }
         }
         nav {
-            padding-bottom: 1*$topmargin;
+            padding-bottom: 1 * $topmargin;
+            
         }
         .submitbtn {
             input {
-                @include WH (89vw,6vh);
+                @include WH(89vw, 6vh);
                 border: 2px solid $btnbg;
                 background-color: $btnbg;
                 color: $textcolor;
@@ -81,13 +83,13 @@ div {
                     width: 24vw;
                 }
                 .in {
-                    margin-top: 18px;
+                    margin-top: 25px;
                 }
             }
             .email {
                 width: 100%;
                 margin-left: 7vw;
-                padding-bottom: 2+$topmargin;
+                padding-bottom: 2 + $topmargin;
                 input {
                     width: 53vw;
                 }
@@ -95,21 +97,22 @@ div {
             .comment {
                 width: 100%;
                 margin-left: 7vw;
-                padding-bottom: 2+$topmargin;
+                padding-bottom: 2 + $topmargin;
 
                 textarea {
                     width: 53vw;
                 }
             }
             .submitbtn {
-                @include WH (12vw,9vh);
-                margin-bottom:  6+$topmargin;
+                @include WH(12vw, 9vh);
+                margin-bottom: 6 + $topmargin;
             }
         }
     }
-    @include media (1000px){
+    @include media(1000px) {
         width: 80%;
-        margin: 2*$topmargin auto;
+        margin: 2 * $topmargin auto;
         border: 3px inset $secondbgcolor;
+        border-radius: 12px;
     }
 }

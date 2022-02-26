@@ -54,6 +54,32 @@ p {
   }
 }
 
+.first {
+  position: relative;
+}
+
+.first .icon {
+  position: absolute;
+  right: 6vw;
+  padding-top: 7px;
+}
+
+@media screen and (min-width: 600px) {
+  .first .icon {
+    right: 8vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .first .icon {
+    right: 1vw;
+  }
+}
+
+.first .icon .fa-solid {
+  font-size: 10px;
+}
+
 div {
   width: 100%;
   height: 900px;
@@ -160,7 +186,7 @@ div form .submitbtn input {
     width: 24vw;
   }
   div form nav .in {
-    margin-top: 18px;
+    margin-top: 25px;
   }
   div form .email {
     width: 100%;
@@ -190,6 +216,7 @@ div form .submitbtn input {
     width: 80%;
     margin: 6vh auto;
     border: 3px inset deepskyblue;
+    border-radius: 12px;
   }
 }
 /*# sourceMappingURL=form.css.map */

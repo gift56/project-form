@@ -38,3 +38,21 @@ p{
     }
     padding-bottom: 4vh;
 }
+.first {
+    position: relative;
+
+    .icon {
+        position: absolute;
+        right: 6vw;
+        padding-top: 7px;
+        @media screen and (min-width:600px) {
+            right: 8vw;            
+        }
+        @media screen and (min-width:1000px) {
+            right: 1vw;         
+        }
+       .fa-solid{
+           font-size: 10px;
+       }
+    }
+}
