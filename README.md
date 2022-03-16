@@ -7,4 +7,4 @@
 
 You view my First form test run  at :
 
-<a href="https://formdesigned.netlify.app/">Landinglite Page</a>
+<a href="https://formdesigned.netlify.app/" target="_blank">Landinglite Page</a>
