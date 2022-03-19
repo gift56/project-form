@@ -83,7 +83,7 @@ p {
 div {
   width: 100%;
   height: 6vh;
-  min-height: 120vh;
+  min-height: 900px;
   padding: 1em;
   background-color: #dddd;
 }
@@ -229,6 +229,19 @@ div form .submitbtn input {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: red;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 2vh;
+}
+
+.suc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: green;
   color: white;
   font-size: 18px;
   margin-bottom: 2vh;

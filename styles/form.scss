@@ -3,7 +3,7 @@
 @import "varible";
 div {
     @include WH(100%);
-    min-height: 120vh;
+    min-height: 900px;
     padding: $padding;
     background-color: $bgcolor;
     header {
@@ -121,6 +121,14 @@ div {
     display: flex;
     justify-content: center;
      background-color: red;
+     color: white;
+     font-size: 18px;
+     margin-bottom: 2vh;
+}
+.suc{
+    display: flex;
+    justify-content: center;
+     background-color: green;
      color: white;
      font-size: 18px;
      margin-bottom: 2vh;
