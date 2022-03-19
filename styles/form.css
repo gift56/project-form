@@ -61,7 +61,7 @@ p {
 .first .icon {
   position: absolute;
   right: 6vw;
-  padding-top: 9px;
+  padding-top: 10px;
 }
 
 @media screen and (min-width: 600px) {
@@ -185,6 +185,8 @@ div form .submitbtn input {
   }
   div form nav input {
     width: 24vw;
+    font-size: 16px;
+    padding-left: 9px;
   }
   div form nav .in {
     margin-top: 25px;
