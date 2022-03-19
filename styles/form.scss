@@ -2,7 +2,8 @@
 @import "mixin";
 @import "varible";
 div {
-    @include WH(100%, 900px);
+    @include WH(100%);
+    min-height: 120vh;
     padding: $padding;
     background-color: $bgcolor;
     header {
@@ -115,4 +116,12 @@ div {
         border: 3px inset $secondbgcolor;
         border-radius: 12px;
     }
+}
+.err{
+    display: flex;
+    justify-content: center;
+     background-color: red;
+     color: white;
+     font-size: 18px;
+     margin-bottom: 2vh;
 }

@@ -11,8 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,500&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="/css/all.min.css">
-        <link rel="stylesheet" href="/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/fontawesome.min.css">
     <link rel="stylesheet" href="/styles/form.css">
 </head>
 
@@ -29,31 +29,39 @@
 
         <hr>
 
-        <form action="#" target="_blank">
+        <form id="my_form">
+            <ul id="msg" class="err"></ul>
             <nav class="names">
                 <span class="first">
                     <label for="firstname">Name*</label><br>
                     <span class="icon"><i class="fa-solid  fa-list-ol"></i></span>
-                    <input type="text" name="firstname">
+                    <input type="text" name="firstname" id="name">
                 </span><br>
+
                 <span>
-                    <input type="text" name="lastname" class="in"><br>
+                    <input type="text" name="lastname" class="in" id="last"><br>
                     <label for="lastname" class="last">Last*</label>
                 </span>
+
             </nav>
+            <!-- <span class="valid-tooltip">Looks good!</span> -->
             <span class="email">
                 <label for="email">Email*</label><br>
-                <input type="email" name="email">
+                <input type="email" name="email" id="email">
             </span><br>
+
             <span class="comment">
                 <label for="message">Comment and Message*</label><br>
                 <textarea name="message" id="" cols="30" rows="10"></textarea>
             </span><br>
+            
             <nav class="submitbtn">
                 <input type="submit" class="submit">
             </nav>
         </form>
     </div>
+
+    <script src="/js/validate.js"></script>
 </body>
 
 </html>
